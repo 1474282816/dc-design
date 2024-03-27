@@ -5,47 +5,53 @@ import React, { ReactNode } from 'react';
 
 export type LinkButtonProps = {
   /**
-   * 是否加载中
+   * @description 是否加载中
+   * @default false
    */
   loading?: boolean;
   /**
-   * 按钮内容
+   * @description 按钮内容
    */
   children?: ReactNode;
   /**
-   * 是否隐藏
+   * @description 是否隐藏
+   * @default false
    */
   hidden?: boolean;
   /**
-   * 是否是危险按钮
+   * @description 是否是危险按钮
+   * @default false
    */
   danger?: boolean;
   /**
-   * 是否需要确认
+   * @description 是否需要确认
+   * @default false
    */
   confirm?: boolean;
   /**
-   * 	确认框的描述
+   * @description 确认框的描述
    */
   confirmTitle?: ReactNode | (() => ReactNode);
   /**
-   * 	确认按钮文字
+   * @description 确认按钮文字
+   * @default "确定"
    */
   okText?: string;
   /**
-   * 	取消按钮文字
+   * @description 取消按钮文字
+   * @default "取消"
    */
   cancelText?: string;
   /**
-   * 按钮点击事件
+   * @description 按钮点击事件
    */
   onClick?: () => void;
   /**
-   * 确认的回调
+   * @description 确认的回调
    */
   onConfirm?: () => void;
   /**
-   * 取消的回调
+   * @description 取消的回调
    */
   onCancel?: () => void;
 };
@@ -79,10 +85,13 @@ const LinkButton: React.FC<LinkButtonProps> = (props) => {
                 okText={okText}
                 cancelText={cancelText}
               >
-                <a style={{ color: danger ? 'red' : 'unset' }}>{children}</a>
+                <a style={{ color: danger ? 'red' : undefined }}>{children}</a>
               </Popconfirm>
             ) : (
-              <a style={{ color: danger ? 'red' : 'unset' }} onClick={onClick}>
+              <a
+                style={{ color: danger ? 'red' : undefined }}
+                onClick={onClick}
+              >
                 {children}
               </a>
             ))}

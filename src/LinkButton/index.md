@@ -2,15 +2,25 @@
 
 列表操作栏使用的文字按钮.
 
+### 基础用法
+
 ```jsx
 import { LinkButton } from '@dckj/dc-design';
 import { Space } from 'antd';
 
-export default () => (<Space size='large'>
+export default () => (
+  <Space size="large">
     <LinkButton>这是一个按钮</LinkButton>
     <LinkButton loading={true}>这是一个按钮</LinkButton>
     <LinkButton danger>这是一个危险按钮</LinkButton>
     <LinkButton confirm>这是一个确认按钮</LinkButton>
-    <LinkButton confirm danger>删除</LinkButton>
-</Space>)
+    <LinkButton confirm danger>
+      删除
+    </LinkButton>
+  </Space>
+);
 ```
+
+### API
+
+<API id="LinkButton"></API>
