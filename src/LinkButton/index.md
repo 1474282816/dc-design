@@ -3,7 +3,7 @@
 列表操作栏使用的文字按钮.
 
 ```jsx
-import { LinkButton } from '@dckj/r-components';
+import { LinkButton } from '@dckj/dc-design';
 import { Space } from 'antd';
 
 export default () => (<Space size='large'>

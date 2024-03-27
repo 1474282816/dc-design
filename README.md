@@ -1,7 +1,7 @@
-# @dckj/r-components
+# @dckj/dc-design
 
-[![NPM version](https://img.shields.io/npm/v/@dckj/r-components.svg?style=flat)](https://npmjs.org/package/@dckj/r-components)
-[![NPM downloads](http://img.shields.io/npm/dm/@dckj/r-components.svg?style=flat)](https://npmjs.org/package/@dckj/r-components)
+[![NPM version](https://img.shields.io/npm/v/@dckj/dc-design.svg?style=flat)](https://npmjs.org/package/@dckj/dc-design)
+[![NPM downloads](http://img.shields.io/npm/dm/@dckj/dc-design.svg?style=flat)](https://npmjs.org/package/@dckj/dc-design)
 
 A react library developed with dumi
 
