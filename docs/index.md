@@ -16,3 +16,13 @@ features:
     emoji: 🚀
     description: Put ! description here
 ---
+
+### 下载
+
+```bash
+npm instanll @dckj/dc-design -D
+or
+pnpm install @dckj/dc-design -D
+or
+yarn add @dckj/dc-design -D
+```
