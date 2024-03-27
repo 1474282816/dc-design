@@ -79,10 +79,13 @@ const LinkButton: React.FC<LinkButtonProps> = (props) => {
                 okText={okText}
                 cancelText={cancelText}
               >
-                <a style={{ color: danger ? 'red' : 'unset' }}>{children}</a>
+                <a style={{ color: danger ? 'red' : undefined }}>{children}</a>
               </Popconfirm>
             ) : (
-              <a style={{ color: danger ? 'red' : 'unset' }} onClick={onClick}>
+              <a
+                style={{ color: danger ? 'red' : undefined }}
+                onClick={onClick}
+              >
                 {children}
               </a>
             ))}
