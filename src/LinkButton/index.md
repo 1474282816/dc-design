@@ -23,4 +23,4 @@ export default () => (
 
 ### API
 
-`<API id="LinkButton"></API>`
+<API id="LinkButton"></API>
